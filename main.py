@@ -99,10 +99,21 @@ def get_question(
     """
     Prompts the user to enter a question for the AI model.
 
+    Args:
+        question_description (str):
+            The prompt to display when asking for input.
+
     Returns (str):
         The user's input question.
+
+    Raises:
+        ValueError:
+            If the input is empty or only whitespace.
   """
     question = str(input(question_description))
+
+    if not question.strip():
+        raise ValueError("Question cannot be empty")
 
     return question
 
