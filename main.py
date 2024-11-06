@@ -1,6 +1,7 @@
-import openai
+import os
 import json
 from typing import (List, Dict, Optional)
+import openai
 
 
 def load_config() -> Dict[str, str]:
@@ -35,7 +36,7 @@ def choose_case() -> int:
 def load_case(
         path: str,
         choice: int
-    ) -> List[str]:
+    ) -> str:
     """
     Loads the specified case study from a text file.
 
@@ -45,15 +46,15 @@ def load_case(
         choice (int):
             The index of the case study to load.
 
-    Returns (list[str]):
-        A list of lines fr  om the case study file.
+    Returns (str):
+        The content of the case study file as a single string.
     """
-    file_path = f"{path}\\pacient_{choice}.txt"
+    file_path = os.path.join(path, f"pacient_{choice}.txt")
 
     with open(file_path, "r", encoding="UTF-8") as f:
-        lines = f.readlines()
+        content = f.read()
 
-    return lines
+    return content
 
 
 def get_question(
@@ -138,7 +139,7 @@ def send_prompt(
 
     chat = openai.ChatCompletion.create(
         model=model,
-        messages=prompt
+        messages=messages
     )
 
     reply = chat.choices[0].message.content
