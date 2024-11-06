@@ -1,5 +1,5 @@
 {
-    "api_key": "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",
+    "api_key": ,
     "model": "gpt-3.5-turbo",
     "path": "pacjenci",
     "question_description": "Zadaj pytanie pacjentowi: ",
