@@ -1,0 +1,8 @@
+{
+    "api_key": "ADD REAL API KEY HERE",
+    "model": "gpt-3.5-turbo",
+    "path": "pacjenci",
+    "question_description": "Zadaj pytanie pacjentowi: ",
+    "second_question_description": "Zadaj kolejne pytanie.\nJeśli chcesz wrócić do wyboru pacjenta wpisz: ",
+    "end_questioning_flag": "EXIT"
+}

@@ -1,0 +1,8 @@
+Chce byś na podstawie poniższych "case study" wygenerował możliwą odpowiedź pacjenta na zadane pytanie.
+
+"CASE STUDY" PACJENTA:
+<tu wkleić "case study" pacjenta>
+
+
+PYTANIE:
+<pytanie>

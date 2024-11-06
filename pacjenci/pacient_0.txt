@@ -1,0 +1,7 @@
+PODSATWOWE DANE PACJENTA
+Imię i nazwisko pacjenta: Staszek
+Data urodzenia: 21 stycznia 2074 r. Wiek: 0 lat
+Płeć: Android
+Stan cywilny: Hiperpozycja
+Aktywność zawodowa: Byt planetarny
+Data przyjęcia do szpitala: 20 października 2024 r.
