@@ -1,3 +1,39 @@
+"""
+This module simulates a conversation with a virtual patient using the OpenAI API.
+
+**Functionality:**
+
+* Loads the OpenAI API key from a configuration file (config.json).
+* Allows the user to select a patient case study from a list.
+* Loads the selected case study from a text file.
+* Prompts the user to enter questions for the AI model.
+* Creates prompts for the OpenAI model, including the case study and questions.
+* Sends prompts to the OpenAI API and prints the generated responses.
+* Handles potential errors like invalid input, file not found, rate limits, and general exceptions.
+
+**Configuration Parameters:**
+
+* `api_key` (str): The OpenAI API key.
+* `model` (str): The OpenAI model to use (default: "gpt-3.5-turbo").
+* `path` (str): The path to the directory containing patient case files.
+* `question_description` (str): The text displayed before the first question.
+* `second_question_description` (str): The text displayed before subsequent questions.
+* `end_questioning_flag` (str): The keyword to end the questioning session.
+
+**Usage:**
+
+Run the script to start the conversation with the virtual patient.
+
+**Requirements:**
+
+* An OpenAI account and API key.
+* The `openai` and `json` libraries installed.
+
+**Notes:**
+
+* The `config.json` file should contain the API key and path to the patient case files.
+* Patient case files should be text files in the specified directory.
+"""
 import os
 import json
 from typing import (List, Dict, Optional)
