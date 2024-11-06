@@ -1,0 +1,1 @@
+Dla tych samych danych wygeneruj odpowiedź na pytanie: <pytanie>
